@@ -1,0 +1,33 @@
+/* Layout básico */
+.container { max-width: 1100px; margin: 16px auto; padding: 0 12px; }
+
+/* Glassy cards e botões */
+.card { background: rgba(15,23,42,.88); backdrop-filter: blur(8px);
+  border: 1px solid #1f2937; border-radius: 14px; padding: 14px; box-shadow: 0 10px 24px rgba(0,0,0,.22); }
+.btn { background:#60a5fa; color:#0b1220; border:0; border-radius: 12px; padding:8px 14px; font-weight:700; cursor:pointer; }
+.btn:hover { filter: brightness(1.05); }
+.btn-danger { background:#ef4444; color:#0b1220; }
+.btn-ghost { background:rgba(255,255,255,.06); color:#e5e7eb; }
+
+/* Input */
+.input { width:100%; background:#0b1220; color:#e5e7eb; border:1px solid #334155; border-radius:12px; padding:10px 12px; outline:none; }
+.input:focus { border-color:#60a5fa; box-shadow: 0 0 0 3px rgba(96,165,250,.25); }
+
+/* Map wrapper */
+.mapwrap { height: 560px; border:1px solid #1f2937; border-radius:14px; overflow:hidden; }
+
+/* Nav */
+.nav { position:sticky; top:0; z-index:50; display:flex; align-items:center; gap:10px;
+  padding:10px 16px; background:rgba(10,15,26,.85); border-bottom:1px solid #1f2937; backdrop-filter: blur(8px); }
+
+/* Toolbar flutuante */
+.toolbar { position:absolute; top:12px; left:12px; display:flex; gap:8px; padding:8px;
+  background:rgba(15,23,42,.85); border:1px solid #1f2937; border-radius:14px; backdrop-filter: blur(8px); }
+
+/* Toasts */
+.toastbox { position:fixed; right:14px; bottom:14px; display:grid; gap:8px; z-index:999; }
+.toast { background:rgba(15,23,42,.92); color:#e5e7eb; border:1px solid #334155; border-radius:12px; padding:10px 12px; }
+
+/* Spinner */
+@keyframes spin { to { transform:rotate(360deg);} }
+.spinner { width:16px; height:16px; border-radius:999px; border:2px solid rgba(255,255,255,.25); border-top-color:#fff; animation:spin 1s linear infinite; }
